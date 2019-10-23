@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D_and_D_demo.Model
 {
-    enum ArmorClass
+    public enum ArmorClass
     {
         Ten = 10,
         Eleven = 11,

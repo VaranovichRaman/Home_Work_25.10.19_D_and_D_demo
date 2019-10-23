@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actions\CreatureList.cs" />
+    <Compile Include="Actions\CreatureFromFileReader.cs" />
+    <Compile Include="Actions\QuestionForClasswork.cs" />
+    <Compile Include="Actions\TryLINQ.cs" />
     <Compile Include="Model\ArmorClass.cs" />
     <Compile Include="Model\AttackMod.cs" />
     <Compile Include="Model\Creature.cs" />

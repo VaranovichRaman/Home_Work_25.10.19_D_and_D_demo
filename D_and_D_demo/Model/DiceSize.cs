@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D_and_D_demo.Model
 {
-    enum DiceSize
+    public enum DiceSize
     {
         d4 = 4,
         d6 = 6,

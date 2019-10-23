@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D_and_D_demo.Model
 {
-    enum AttackMod
+    public enum AttackMod
     {
         MinusTwo = -2,
         MinusOne = -1,

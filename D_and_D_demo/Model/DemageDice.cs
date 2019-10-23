@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace D_and_D_demo.Model
 {
-    class DemageDice
+    public class DemageDice
     {
         public DiceCount NumberOfDices { get; set; }
         public DiceSize SizeOfDice { get; set; }

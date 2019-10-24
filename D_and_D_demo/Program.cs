@@ -22,6 +22,9 @@ namespace D_and_D_demo
             tryLINQ.CreatureSearch();
             tryLINQ.ShowCreatureDemage();
             tryLINQ.MaxDemage();
+            tryLINQ.AverageDemage();
+            tryLINQ.SortByLevelAndHitpoints();
+            tryLINQ.SumHPOf1LvlCreatures();
             Console.ReadLine();
         }           
     }

@@ -20,6 +20,8 @@ namespace D_and_D_demo
             tryLINQ.MaxArmorClass();
             tryLINQ.SortByClaws();
             tryLINQ.CreatureSearch();
+            tryLINQ.ShowCreatureDemage();
+            tryLINQ.MaxDemage();
             Console.ReadLine();
         }           
     }

@@ -39,5 +39,21 @@ namespace D_and_D_demo.Actions
             var firstCreature = reader.CreateCreatureList().First(x => x.CreatureLevel < 4 && x.CreatureLevel > 2);
             Console.WriteLine($"{firstCreature.CreatureName}.");
         }
+        public void ShowCreatureDemage()
+        {
+            Console.WriteLine($"\n-------Creatures and their demage-------\n");
+            foreach (var demage in reader.CreateCreatureList().Select(x => new { Name = x.CreatureName, NumberOfDices = ((int)(DiceCount)Enum.Parse(typeof(DiceCount), x.CreatureWeapon.Demage.NumberOfDices.ToString())).ToString(),
+                SizeOfDice = x.CreatureWeapon.Demage.SizeOfDice.ToString(), Mod = x.CreatureWeapon.DemageMod}))
+            {
+                Console.WriteLine($"{demage.Name} ---- {demage.NumberOfDices}{demage.SizeOfDice} + {demage.Mod}");
+            }
+        }
+        public void MaxDemage()
+        {
+            var maxDemage = reader.CreateCreatureList().Select(x => new {NumberOfDices =(int)(DiceCount)Enum.Parse(typeof(DiceCount), x.CreatureWeapon.Demage.NumberOfDices.ToString()),
+                SizeOfDice = ((int)(DiceSize)Enum.Parse(typeof(DiceSize), x.CreatureWeapon.Demage.SizeOfDice.ToString())), Mod = x.CreatureWeapon.DemageMod}).Max(m => (m.NumberOfDices*m.SizeOfDice + m.Mod)); 
+           
+            Console.WriteLine($"\n\nMax demage from all creatures: {maxDemage}.");
+        }
     }
 }
